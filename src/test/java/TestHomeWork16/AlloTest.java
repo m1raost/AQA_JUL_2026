@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -38,6 +39,8 @@ public class AlloTest {
         pom.searchForProduct("IPhone 16 Pro Max");
 
         List<WebElement> phonePic = pom.getProducts();
+        Assert.assertNotNull(phonePic, "Products list should not be null");
+        Assert.assertTrue(phonePic.size() >= 3, "Should have at least 3 products");
         for (int i = 0; i < 3; i++) {
             pom.printProductDetails(phonePic.get(i), i);
         }
