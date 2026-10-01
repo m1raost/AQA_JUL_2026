@@ -61,6 +61,7 @@ public class RestTest {
                 .queryParam("noinfo")
                 .queryParam("results", 3)
                 .get()
+                .prettyPeek()
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)

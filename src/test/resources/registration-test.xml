@@ -3,8 +3,7 @@
 <suite name="Suite1" verbose="1">
     <test name="My package 2">
         <classes>
-            <class name="org.prog.session14.TestNG2"/>
-            <class name="org.prog.session14.TestNG3"/>
+            <class name="org.prog.session18.CucumberRunner"/>
         </classes>
     </test>
 </suite>
