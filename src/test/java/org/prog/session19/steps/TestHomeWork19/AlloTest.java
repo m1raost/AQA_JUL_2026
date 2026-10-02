@@ -1,4 +1,4 @@
-package TestHomeWork17;
+package org.prog.session19.steps.TestHomeWork19;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

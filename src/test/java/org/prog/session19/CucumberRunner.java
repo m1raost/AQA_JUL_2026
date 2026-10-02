@@ -39,6 +39,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
         driver = new ChromeDriver(options);
         WebSteps.googlePage = new GooglePage(driver);
+        AlloSteps.alloPage = new AlloPage(driver);
     }
 
     @AfterMethod
