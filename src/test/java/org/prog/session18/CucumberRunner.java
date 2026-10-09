@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.prog.session16.page.GooglePage;
 import org.prog.session18.steps.DBSteps;
+import org.prog.session18.steps.HomeWork18.AlloPage;
+import org.prog.session18.steps.HomeWork18.AlloSteps;
 import org.prog.session18.steps.WebSteps;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -36,6 +38,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
         driver = new ChromeDriver(options);
         WebSteps.googlePage = new GooglePage(driver);
+        AlloSteps.alloPage = new AlloPage(driver);
     }
 
     @AfterSuite
