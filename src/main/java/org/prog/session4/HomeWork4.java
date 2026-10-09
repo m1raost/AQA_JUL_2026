@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class HomeWork4 {
     public static void main(String[] args) {
+        // Bubble sort
         Random random = new Random();
 
         int[] ints = new int[50];
@@ -36,3 +37,5 @@ public class HomeWork4 {
         }
     }
 }
+
+
