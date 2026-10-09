@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.prog.session16.page.GooglePage;
 import org.prog.session19.steps.DBSteps;
 import org.prog.session19.steps.DataHolder;
+import org.prog.session19.steps.TestHomeWork19.AlloPage;
+import org.prog.session19.steps.TestHomeWork19.AlloSteps;
 import org.prog.session19.steps.WebSteps;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -19,6 +21,7 @@ import java.sql.DriverManager;
 @CucumberOptions(
         glue = "org.prog.session20.steps",
         features = "src/test/resources/features",
+        tags = "@allo",
         plugin = {"pretty", "html:target/report.html"}
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests {
@@ -39,6 +42,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
         driver = new ChromeDriver(options);
         WebSteps.googlePage = new GooglePage(driver);
+        AlloSteps.alloPage = new AlloPage(driver);
     }
 
     @AfterMethod
