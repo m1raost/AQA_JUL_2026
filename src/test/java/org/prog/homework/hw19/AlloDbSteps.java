@@ -1,4 +1,4 @@
-package org.prog.session19.steps.TestHomeWork19;
+package org.prog.homework.hw19;
 
 import io.cucumber.java.en.Then;
 import org.prog.session19.steps.DBSteps;

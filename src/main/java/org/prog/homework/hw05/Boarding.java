@@ -1,4 +1,4 @@
-package org.prog.session5;
+package org.prog.homework.hw05;
 
 public class Boarding {
     public static void main(String[] args) {

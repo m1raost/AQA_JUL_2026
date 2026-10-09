@@ -1,4 +1,4 @@
-package HomeWork10;
+package org.prog.homework.hw10;
 
 //TODO: 1. Write your own exception that extends RuntimeException
 //      2. In equals AND hashCode if phone has null color or null model -> throw your exception

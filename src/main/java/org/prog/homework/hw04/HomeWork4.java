@@ -1,4 +1,4 @@
-package org.prog.session4;
+package org.prog.homework.hw04;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package org.prog.session5;
+package org.prog.homework.hw05;
 //TODO:
 // Write class Plane
 // Plane must have max seats

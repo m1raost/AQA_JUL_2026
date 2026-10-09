@@ -1,4 +1,4 @@
-package org.prog.session15;
+package org.prog.homework.hw15;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

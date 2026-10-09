@@ -1,4 +1,4 @@
-package org.prog.session14;
+package org.prog.homework.hw14;
 //TODO: load allo.ua and search for iphone
 
 import org.junit.jupiter.api.Assertions;

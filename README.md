@@ -22,17 +22,16 @@ The course progresses from Java fundamentals to a full UI + DB test pipeline run
 ## Project layout
 
 ```
-src/main/java/org/prog/session1..12   Java fundamentals (instructor examples + homework)
-src/test/java/org/prog/session13..20  Test automation (TestNG/JUnit, Selenium, REST, JDBC, Cucumber)
+src/main/java/org/prog/session1..12   Java fundamentals (instructor's examples)
+src/main/java/org/prog/homework/      My Java homework, one package per task (hw02 ... hw12)
+src/test/java/org/prog/session13..20  Instructor's test automation examples
+src/test/java/org/prog/homework/      My test homework, one package per task (hw13 ... hw19)
 src/test/resources/features           Cucumber feature files
 src/test/resources/testng.xml         Suite executed by `mvn test`
 docker/selenium_grid                  Selenium Hub + Chrome node
 docker/mysql                          MySQL for DB tests (+ table.sql)
 docker/jenkins, docker/jenkins_local  Jenkins setups
 ```
-
-> `src/HomeWork3.java`, `src/HomeWork10`, `src/HomeWork12` and `src/org/prog/HomeWork8` are early
-> homework files kept in their original location; they are outside the Maven source roots and are not compiled.
 
 ## How to run
 
@@ -64,20 +63,20 @@ Notes:
 The homework was done in separate branches (each created from the instructor's `master` at that point
 of the course) and then merged into `master`. The branches are kept for history.
 
-| Branch | Topic |
-|---|---|
-| `home_work_2` | Variables and `if / else` — can I buy the phone? |
-| `HomeWork3` | Arrays and loops — fill an array in reverse |
-| `HomeWork4` | Arrays — bubble sort of random numbers |
-| `HomeWork5` | OOP basics — `Plane` and `Boarding` classes |
-| `HomeWork6` | Strings — filtering valid e-mail addresses |
-| `HomeWork8` | OOP — inheritance and abstraction (`IPhone`, `Apple`, `Android`) |
-| `HomeWork10` | Custom exceptions in `equals` / `hashCode` |
-| `HomeWork12` | Collections — `Map` / `Set` of phones and contacts |
-| `TestHomeWork13` | JUnit 5 parameterized tests |
-| `TestHomeWork14` | First Selenium UI test (allo.ua) |
-| `TestHomeWork15` | Selenium — finding elements and locators |
-| `TestHomeWork16` | Page Object pattern |
-| `TestHomeWork17` | Saving scraped data to MySQL via JDBC (DTO + DB store) |
-| `TestHomeWork18` | Cucumber — feature file, page object and steps |
-| `TestHomeWork19` | Cucumber + Maven + Jenkins — UI + DB scenario combined |
+| Branch | Topic | Code location |
+|---|---|---|
+| `home_work_2` | Variables and `if / else` — can I buy the phone? | `main/.../homework/hw02` |
+| `HomeWork3` | Arrays and loops — fill an array in reverse | `main/.../homework/hw03` |
+| `HomeWork4` | Arrays — bubble sort of random numbers | `main/.../homework/hw04` |
+| `HomeWork5` | OOP basics — `Plane` and `Boarding` classes | `main/.../homework/hw05` |
+| `HomeWork6` | Strings — filtering valid e-mail addresses | `main/.../homework/hw06` |
+| `HomeWork8` | OOP — inheritance and abstraction (`IPhone`, `Apple`, `Android`) | `main/.../homework/hw08` |
+| `HomeWork10` | Custom exceptions in `equals` / `hashCode` | `main/.../homework/hw10` |
+| `HomeWork12` | Collections — `Map` / `Set` of phones and contacts | `main/.../homework/hw12` |
+| `TestHomeWork13` | JUnit 5 parameterized tests | `test/.../homework/hw13` |
+| `TestHomeWork14` | First Selenium UI test (allo.ua) | `test/.../homework/hw14` |
+| `TestHomeWork15` | Selenium — finding elements and locators | `test/.../homework/hw15` |
+| `TestHomeWork16` | Page Object pattern | `test/.../homework/hw16` |
+| `TestHomeWork17` | Saving scraped data to MySQL via JDBC (DTO + DB store) | `test/.../homework/hw19 (shared)` |
+| `TestHomeWork18` | Cucumber — feature file, page object and steps | `test/.../homework/hw19 (shared)` |
+| `TestHomeWork19` | Cucumber + Maven + Jenkins — UI + DB scenario combined | `test/.../homework/hw19` |

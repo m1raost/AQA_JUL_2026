@@ -1,4 +1,4 @@
-package HomeWork10;
+package org.prog.homework.hw10;
 
 public class Apple {
     public String color;

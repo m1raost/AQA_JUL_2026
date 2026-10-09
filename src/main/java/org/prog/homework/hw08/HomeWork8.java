@@ -1,4 +1,4 @@
-package org.prog.HomeWork8;
+package org.prog.homework.hw08;
 
 //TODO: interface IPhone
 // Apple and Android implement IPhone

@@ -1,4 +1,4 @@
-package org.prog.session2;
+package org.prog.homework.hw02;
 
 public class HomeWork_2 {
     public static void main(String[] args) {

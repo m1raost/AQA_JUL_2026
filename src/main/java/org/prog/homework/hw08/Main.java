@@ -1,4 +1,4 @@
-package org.prog.HomeWork8;
+package org.prog.homework.hw08;
 
 //TODO: For class Android and Apple, add color, model;
 //TODO: add equals and hashcode for both

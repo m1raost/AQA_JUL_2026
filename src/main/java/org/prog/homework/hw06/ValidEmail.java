@@ -1,4 +1,4 @@
-package org.prog.session6;
+package org.prog.homework.hw06;
 
 //TODO: from these emails, print only valid ones:
 // String[] emails = new String[] {"test"};

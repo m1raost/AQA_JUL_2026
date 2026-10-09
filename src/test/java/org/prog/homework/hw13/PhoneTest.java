@@ -1,4 +1,4 @@
-package org.prog.session13;
+package org.prog.homework.hw13;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

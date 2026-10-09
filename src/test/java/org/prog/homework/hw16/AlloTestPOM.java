@@ -1,4 +1,4 @@
-package TestHomeWork16;
+package org.prog.homework.hw16;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

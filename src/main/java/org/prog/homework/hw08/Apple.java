@@ -1,4 +1,4 @@
-package org.prog.HomeWork8;
+package org.prog.homework.hw08;
 
 
 public class Apple implements IPhone {
