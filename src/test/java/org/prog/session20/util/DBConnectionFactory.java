@@ -1,5 +1,6 @@
 package org.prog.session20.util;
 
+import org.prog.util.DbConfig;
 import lombok.SneakyThrows;
 
 import java.sql.Connection;
@@ -11,15 +12,9 @@ public class DBConnectionFactory {
     public static Connection getConnection() {
         String envType = System.getProperty("envType", "jenkins");
         if ("jenkins".equals(envType)) {
-            return DriverManager.getConnection(
-                    "jdbc:mysql://mysql-db-1:3306/db",
-                    "root",
-                    "password");
+            return DbConfig.connect("jdbc:mysql://mysql-db-1:3306/db");
         } else {
-            return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/db",
-                    "root",
-                    "password");
+            return DbConfig.connect("jdbc:mysql://localhost:3306/db");
         }
     }
 }

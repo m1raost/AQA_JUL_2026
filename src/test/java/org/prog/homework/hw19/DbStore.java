@@ -1,5 +1,6 @@
 package org.prog.homework.hw19;
 
+import org.prog.util.DbConfig;
 import java.sql.*;
 import java.util.List;
 
@@ -7,10 +8,7 @@ public class DbStore {
     private Connection connection;
 
     public void connectToDatabase() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/db";
-        String user = "root";
-        String password = "password";
-        connection = DriverManager.getConnection(url, user, password);
+        connection = DbConfig.connect("jdbc:mysql://localhost:3306/db");
     }
 
     public void storePhonesToDatabase(List<PhoneDto> phoneList) throws SQLException {

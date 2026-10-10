@@ -1,5 +1,6 @@
 package org.prog.session17;
 
+import org.prog.util.DbConfig;
 import io.restassured.RestAssured;
 import lombok.SneakyThrows;
 import org.prog.session17.dto.PersonDto;
@@ -25,10 +26,7 @@ public class DBTest {
     @SneakyThrows
     @BeforeSuite
     public void connectDB() {
-        conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/db",
-                "root",
-                "password");
+        conn = DbConfig.connect("jdbc:mysql://localhost:3306/db");
     }
 
     @SneakyThrows

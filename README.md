@@ -41,6 +41,10 @@ Prerequisites: JDK 17, Maven, Chrome (for local runs), Docker (for Grid / MySQL 
 # compile everything
 mvn test-compile
 
+# database credentials come from the environment (never committed)
+cp .env.example .env        # then edit DB_PASSWORD
+set -a; source .env; set +a
+
 # start the infrastructure used by the UI/DB tests
 docker compose -f docker/mysql/docker-compose.yaml up -d
 docker compose -f docker/selenium_grid/docker-compose.yaml up -d
@@ -55,7 +59,7 @@ mvn test
 
 Notes:
 - Tests for sessions 15–20 need a browser and, for the Cucumber/DB scenarios, a running MySQL
-  (credentials in the code are the throw-away defaults of the local Docker container).
+  (connection settings are read from `DB_PASSWORD`, optional `DB_USER` and `DB_URL`; in Jenkins define `DB_PASSWORD` as a credential/environment variable).
 - The plain Java homework classes can be run directly from the IDE (`main` methods).
 
 ## Branches

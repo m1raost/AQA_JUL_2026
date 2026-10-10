@@ -1,5 +1,6 @@
 package org.prog.session19;
 
+import org.prog.util.DbConfig;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import lombok.SneakyThrows;
@@ -31,10 +32,7 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
     @SneakyThrows
     @BeforeSuite
     public void connectToDB() {
-        DBSteps.connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/db",
-                "root",
-                "password");
+        DBSteps.connection = DbConfig.connect("jdbc:mysql://localhost:3306/db");
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
