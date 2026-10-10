@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeSuite;
 import java.sql.DriverManager;
 
 @CucumberOptions(
-        glue = "org.prog.session20.steps",
+        glue = "org.prog.homework.hw19",
         features = "src/test/resources/features",
         tags = "@allo",
         plugin = {"pretty", "html:target/report.html"}
